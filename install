@@ -4,7 +4,8 @@ git submodule init
 git submodule update
 
 # Symlink dot files
-ln -s vim/vimrc ~/.vimrc
+ln -s vimrc ~/.vimrc
+ln -s tmux.conf ~/.tmux.conf
 
 # Compile the Command-T extension
 cd vim/bundle/Command-T/ruby/command-t
