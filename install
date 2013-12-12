@@ -1,0 +1,14 @@
+#!/bin/sh
+
+git submodule init
+git submodule update
+
+# Symlink dot files
+ln -s vim/vimrc ~/.vimrc
+
+# Compile the Command-T extension
+cd vim/bundle/Command-T/ruby/command-t
+ruby extconf.rb
+make
+
+# TODO not sure how to get back to repo root
