@@ -4,8 +4,11 @@ git submodule init
 git submodule update
 
 # Symlink dot files
-ln -s vimrc ~/.vimrc
-ln -s tmux.conf ~/.tmux.conf
+ln -s $(pwd)/bashrc     ~/.bashrc
+ln -s $(pwd)/gitconfig  ~/.gitconfig
+ln -s $(pwd)/vimrc      ~/.vimrc
+ln -s $(pwd)/vim        ~/.vim
+ln -s $(pwd)/tmux.conf  ~/.tmux.conf
 
 # Symlink vi to vim
 ln -s /usr/local/bin/vim /usr/local/bin/vi

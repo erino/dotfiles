@@ -1,0 +1,13 @@
+[user]
+  name = Erin Staniland
+  email = erin@withassociates.com
+[alias]
+  br = branch
+  ci = commit
+  co = checkout
+  di = diff
+  dc = diff --cached
+  st = status -s
+  x = !open -a GitX .
+  unstage = reset HEAD --
+  last = log -1 HEAD
