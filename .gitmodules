@@ -41,3 +41,6 @@
 	path = vim/bundle/Command-T
 	url = https://github.com/vim-scripts/Command-T.git
   ignore = dirty
+[submodule "vim/bundle/ag.vim"]
+	path = vim/bundle/ag.vim
+	url = https://github.com/rking/ag.vim.git
