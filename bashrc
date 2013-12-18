@@ -1,5 +1,6 @@
-# Homebrew
-PATH=/usr/local/bin:$PATH
+
+# Local bin & Homebrew
+PATH=~/bin:/usr/local/bin:$PATH
 export PATH
 
 # RVM
@@ -13,3 +14,5 @@ if [ "$PS1" ]; then
 fi
 
 export EDITOR="vi"
+
+source ~/bin/jump_to_project.sh

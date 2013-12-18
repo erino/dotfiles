@@ -5,6 +5,7 @@ git submodule update
 
 # Symlink dot files
 ln -s $(pwd)/bashrc     ~/.bashrc
+ln -s $(pwd)/bin        ~/.bin
 ln -s $(pwd)/gitconfig  ~/.gitconfig
 ln -s $(pwd)/vimrc      ~/.vimrc
 ln -s $(pwd)/vim        ~/.vim
