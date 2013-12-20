@@ -16,3 +16,4 @@ fi
 export EDITOR="vi"
 
 source ~/bin/jump_to_project.sh
+
