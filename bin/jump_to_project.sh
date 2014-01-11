@@ -3,7 +3,7 @@
 function p() {
   PROJECT_PATH=~/Projects
 
-  results=(`find $PROJECT_PATH -type d -maxdepth 3 -iname "*$1*"`)
+  results=(`find $PROJECT_PATH -type d -maxdepth 2 -iname "*$1*"`)
   count=${#results[@]}
 
   if [ $count -gt 1 ]; then
