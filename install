@@ -15,6 +15,9 @@ ln -s $(pwd)/tmux.conf  ~/.tmux.conf
 # Symlink vi to vim
 ln -s /usr/local/bin/vim /usr/local/bin/vi
 
+# Enable text selection in Quick Look
+defaults write com.apple.finder QLEnableTextSelection -bool true && killall Finder
+
 # Compile the Command-T extension
 cd vim/bundle/Command-T/ruby/command-t
 ruby extconf.rb
