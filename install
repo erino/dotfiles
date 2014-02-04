@@ -5,6 +5,7 @@ git submodule update
 
 # Symlink dot files
 ln -s $(pwd)/bin        ~/.bin
+ln -s $(pwd)/gemrc      ~/.gemrc
 ln -s $(pwd)/gitconfig  ~/.gitconfig
 ln -s $(pwd)/profile    ~/.profile
 ln -s $(pwd)/rspec      ~/.rspec
