@@ -44,7 +44,7 @@ function proml
             ;;
     esac
 
-    PS1="\h\$(__git_ps1)% ${DEFAULT}"
+    PS1="\h:\W\$(__git_ps1)% ${DEFAULT}"
     PS2='> '
     PS4='+ '
 }
