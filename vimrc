@@ -12,11 +12,14 @@ set expandtab               " insert spaces instead of tabs
 set autoindent
 set nowrap                  " disable line wrapping
 set incsearch               " show search matches as you type
+set ignorecase smartcase    " make searches case-sensitive only if they contain upper-case characters
 
 set autoread                " read file if it's changed outside of vim
 
 set history=1000            " remember more than 20 commands/search patterns
 set noswapfile
+
+set nojoinspaces            " insert only one space when joining lines that contain sentence-terminating punctuation like `.`.
 
 let mapleader = ","         " set <LEADER> to ,
 
