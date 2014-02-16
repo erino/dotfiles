@@ -3,10 +3,12 @@
 PATH=~/bin:/usr/local/bin:$PATH
 export PATH
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-PATH=$PATH:$HOME/.rvm/bin
-export PATH
+# chruby
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
+# default to ruby 2.1
+chruby ruby 2.1
 
 if [ "$PS1" ]; then
   export HISTCONTROL=ignoredups
