@@ -20,8 +20,10 @@ ln -s /usr/local/bin/vim /usr/local/bin/vi
 defaults write com.apple.finder QLEnableTextSelection -bool true && killall Finder
 
 # Compile the Command-T extension
+chruby system
 cd vim/bundle/Command-T/ruby/command-t
 ruby extconf.rb
+make clean
 make
 
 # TODO not sure how to get back to repo root
