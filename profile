@@ -8,7 +8,7 @@ source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
 # default to ruby 2.1
-chruby ruby 2.1
+chruby 2.1
 
 if [ "$PS1" ]; then
   export HISTCONTROL=ignoredups
