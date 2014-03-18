@@ -7,6 +7,7 @@ git submodule update
 ln -s $(pwd)/bin        ~/.bin
 ln -s $(pwd)/gemrc      ~/.gemrc
 ln -s $(pwd)/gitconfig  ~/.gitconfig
+ln -s $(pwd)/gitignore  ~/.gitignore
 ln -s $(pwd)/profile    ~/.profile
 ln -s $(pwd)/rspec      ~/.rspec
 ln -s $(pwd)/vimrc      ~/.vimrc

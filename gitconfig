@@ -17,3 +17,5 @@
 	default = simple
 [branch]
 	autosetuprebase = always
+[core]
+	excludesfile = /Users/erin/.gitignore
