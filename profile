@@ -7,6 +7,9 @@ export PATH
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
+# Bundler Commands
+alias bx='bundle exec'
+
 # default to ruby 2.1
 chruby 2.1
 
