@@ -1,6 +1,6 @@
 
 # Local bin & Homebrew
-PATH=./bin:~/bin:/usr/local/bin:$PATH
+PATH=~/bin:/usr/local/bin:$PATH
 export PATH
 
 # chruby
@@ -17,9 +17,9 @@ fi
 
 export EDITOR="vi"
 
-source ~/bin/jump_to_project.sh
 source ~/bin/clone_project.sh
-
+source ~/bin/edit_hosts.sh
+source ~/bin/jump_to_project.sh
 
 # Set the prompt
 #
