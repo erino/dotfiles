@@ -6,9 +6,11 @@ export PATH
 # chruby
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+alias chrv='chruby `cat .ruby-version`'
 
 # Bundler Commands
 alias bx='bundle exec'
+alias bxr='bundle exec rspec'
 
 # default to ruby 2.1
 chruby 2.1
