@@ -37,6 +37,8 @@ if &t_Co > 2 || has("gui_running")
   syntax on
 endif
 
+" Convert ruby hash to 1.9 syntax
+map :19h :%s/:\([^ ]*\)\(\s*\)=>/\1:/g
 
 " Removes trailing spaces
 function TrimWhiteSpace()
