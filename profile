@@ -1,6 +1,6 @@
 
 # Local bin & Homebrew
-PATH=~/bin:/usr/local/bin:$PATH
+PATH=/usr/local/sbin:~/bin:/usr/local/bin:$PATH
 export PATH
 
 # chruby
