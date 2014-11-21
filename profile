@@ -17,7 +17,7 @@ chruby 2.1
 
 if [ "$PS1" ]; then
   export HISTCONTROL=ignoredups
-  export HISTSIZE=10000
+  export HISTSIZE=1000000
 fi
 
 export EDITOR="vi"
