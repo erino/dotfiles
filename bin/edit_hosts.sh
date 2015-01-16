@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 function ehosts() {
-  sudo vi /etc/hosts && sudo killall -HUP mDNSResponder
+  sudo vi /etc/hosts && sudo discoveryutil udnsflushcaches
 }
