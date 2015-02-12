@@ -7,15 +7,19 @@
 	ci = commit
 	co = checkout
 	com = checkout master
-	di = diff
 	dc = diff --cached
-	st = status -s
-	x = !open -a GitX .
-	unstage = reset HEAD --
+	di = diff
 	last = log -1 HEAD
+	rc = rebase --continue
+	ri = rebase --interactive
+	st = status -s
+	unstage = reset HEAD --
+	x = !open -a GitX .
 [push]
 	default = simple
 [branch]
 	autosetuprebase = always
 [core]
 	excludesfile = /Users/erin/.gitignore
+[rebase]
+	autosquash = true
