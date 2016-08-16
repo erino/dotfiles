@@ -1,6 +1,5 @@
 [user]
 	name = Erin Raj-Staniland
-	email = erin@withassociates.com
 [alias]
 	br = branch
 	ca = commit --amend
