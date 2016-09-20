@@ -12,9 +12,6 @@ alias chrv='chruby `cat .ruby-version`'
 alias bx='bundle exec'
 alias bxr='bundle exec rspec'
 
-# default to ruby 2.1
-chruby 2.1
-
 if [ "$PS1" ]; then
   export HISTCONTROL=ignoredups
   export HISTSIZE=1000000
