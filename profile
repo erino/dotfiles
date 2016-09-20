@@ -24,8 +24,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-source ~/bin/clone_project.sh
-source ~/bin/edit_hosts.sh
-source ~/bin/jump_to_project.sh
-source ~/bin/proml.sh
+source ~/Projects/dotfiles/bin/jump_to_project.sh
+source ~/Projects/dotfiles/bin/proml.sh
 
