@@ -26,4 +26,3 @@ fi
 
 source ~/Projects/dotfiles/bin/jump_to_project.sh
 source ~/Projects/dotfiles/bin/proml.sh
-

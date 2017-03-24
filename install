@@ -27,3 +27,5 @@ make clean
 make
 
 # TODO not sure how to get back to repo root
+
+brew install bash-completion
