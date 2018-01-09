@@ -17,7 +17,7 @@ if [ "$PS1" ]; then
   export HISTSIZE=1000000
 fi
 
-export EDITOR="vi"
+export EDITOR="nvim"
 
 # Brew bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
