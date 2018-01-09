@@ -20,6 +20,6 @@
 [branch]
 	autosetuprebase = always
 [core]
-	excludesfile = /Users/erin/.gitignore
+	excludesfile = ~/.gitignore
 [rebase]
 	autosquash = true
