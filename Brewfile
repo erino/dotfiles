@@ -11,3 +11,4 @@ brew 'neovim'
 brew 'ruby-install'
 brew 'tmux'
 
+brew 'mongodb'
