@@ -18,7 +18,9 @@ ln -s $(pwd)/tmux.conf  ~/.tmux.conf
 ln -s /usr/local/bin/vim /usr/local/bin/vi
 
 # Enable text selection in Quick Look
-defaults write com.apple.finder QLEnableTextSelection -bool true && killall Finder
+defaults write com.apple.finder QLEnableTextSelection -bool true
+defaults write com.apple.screencapture location ~/Downloads
+killall Finder
 
 # Compile the Command-T extension
 chruby system
