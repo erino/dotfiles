@@ -12,3 +12,5 @@ brew 'ruby-install'
 brew 'tmux'
 
 brew 'mongodb'
+brew 'the_silver_searcher'
+
