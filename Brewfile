@@ -1,5 +1,6 @@
 cask_args appdir: '/Applications'
 cask 'TextMate'
+cask 'java'
 
 brew 'bash-completion'
 brew 'chruby'
