@@ -17,3 +17,5 @@ brew 'redis'
 brew 'mongodb'
 brew 'the_silver_searcher'
 
+cask 'vagrant'
+cask 'virtualbox'
