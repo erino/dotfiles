@@ -11,6 +11,8 @@ brew 'jsonpp'
 brew 'neovim'
 brew 'ruby-install'
 brew 'tmux'
+brew 'yarn'
+brew 'redis'
 
 brew 'mongodb'
 brew 'the_silver_searcher'
