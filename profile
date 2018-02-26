@@ -6,7 +6,7 @@ export PATH
 # chruby
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
-alias chrv='chruby `cat .ruby-version`'
+chruby ruby-2.5
 
 # Bundler Commands
 alias bx='bundle exec'
