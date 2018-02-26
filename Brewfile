@@ -14,8 +14,10 @@ brew 'tmux'
 brew 'yarn'
 brew 'redis'
 
+brew 'hub'
 brew 'mongodb'
 brew 'the_silver_searcher'
 
 cask 'vagrant'
 cask 'virtualbox'
+cask 'iterm2'
