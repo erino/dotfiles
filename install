@@ -1,9 +1,6 @@
 #!/bin/sh
 brew bundle
 
-git submodule init
-git submodule update
-
 rm ~/.vimrc ~/.config/nvim/init.vim
 # Symlink dot files
 ln -s $(pwd)/gemrc      ~/.gemrc
