@@ -4,9 +4,18 @@ PATH=/usr/local/sbin:~/bin:/usr/local/bin:$PATH
 export PATH
 
 # chruby
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby ruby-2.5
+# Setup chruby
+#
+latest_installed_ruby()
+{
+  /bin/ls -1 -d ~/.rubies/ruby-* | tail -n 1 | xargs basename
+}
+
+if command -v chruby-exec > /dev/null; then
+  source /usr/local/share/chruby/chruby.sh
+  chruby $(latest_installed_ruby)
+  source /usr/local/share/chruby/auto.sh
+fi
 
 # Bundler Commands
 alias bx='bundle exec'
