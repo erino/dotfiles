@@ -24,6 +24,7 @@ alias bxr='bundle exec rspec'
 if [ "$PS1" ]; then
   export HISTCONTROL=ignoredups
   export HISTSIZE=1000000
+  shopt -s histappend		# append history to ~\.bash_history when exiting shell
 fi
 
 export EDITOR="nvim"
