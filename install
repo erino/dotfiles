@@ -4,6 +4,7 @@ brew bundle
 git submodule init
 git submodule update
 
+rm ~/.vimrc ~/.config/nvim/init.vim
 # Symlink dot files
 ln -s $(pwd)/gemrc      ~/.gemrc
 ln -s $(pwd)/gitconfig  ~/.gitconfig
@@ -11,6 +12,7 @@ ln -s $(pwd)/gitignore  ~/.gitignore
 ln -s $(pwd)/profile    ~/.profile
 ln -s $(pwd)/rspec      ~/.rspec
 ln -s $(pwd)/vimrc      ~/.vimrc
+ln -s $(pwd)/init.vim   ~/.config/nvim/init.vim
 ln -s $(pwd)/vim        ~/.vim
 ln -s $(pwd)/tmux.conf  ~/.tmux.conf
 

@@ -1,56 +1,41 @@
-set nocompatible
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-silent! call pathogen#runtime_append_all_bundles()
+call plug#begin('~/.vim/plugged')
 
-filetype plugin indent on
+" Declare the list of plugins.
+Plug 'epmatsw/ag.vim'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-vinegar'
+Plug 'vim-ruby/vim-ruby'
+Plug 'lepture/vim-jinja'
+Plug 'wincent/command-t', {
+  \   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
+  \ }
+call plug#end()
 
 set tabstop=2               " default size of a real tab stop
 set softtabstop=2           " pressing tab/backspaces inserts/removes 2 chars
 set shiftwidth=2            " the number of spaces used by << and >>
 set expandtab               " insert spaces instead of tabs
 
-set autoindent
-set nowrap                  " disable line wrapping
-set incsearch               " show search matches as you type
-set ignorecase smartcase    " make searches case-sensitive only if they contain upper-case characters
-
 set autoread                " read file if it's changed outside of vim
-
-set history=1000            " remember more than 20 commands/search patterns
 set noswapfile
-
-set nojoinspaces            " insert only one space when joining lines that contain sentence-terminating punctuation like `.`.
+set nowrap                  " disable line wrapping
 
 let mapleader = ","         " set <LEADER> to ,
+
+let g:netrw_liststyle= 3    " Default to tree style listing
+let g:netrw_altv = 1        " New split window on the right
+
+set wildignore+=*/node_modules/* " Ignore node_modules
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
-" Automatically source the config file on save.
-if has("autocmd")
-  autocmd BufWritePost .vimrc source $MYVIMRC
-endif
-
-if &t_Co > 2 || has("gui_running")
-  syntax on
-endif
-
-" Removes trailing spaces
-function TrimWhiteSpace()
-  %s/\s*$//
-  ''
-:endfunction
-nmap <LEADER>w :call TrimWhiteSpace()<CR>
-
-" Quickly open the vim config file in a new tab.
-nmap <leader>v :tabedit $MYVIMRC<CR>
-
-" Show whitespace
-set listchars=tab:>-,trail:·,eol:$
-nmap <silent> <leader>s :set nolist!<CR>
-
-nmap <LEADER>d :NERDTreeToggle<CR>
-
-set tags+=gems.tags  "ctags for Gems
