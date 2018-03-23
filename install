@@ -13,9 +13,6 @@ ln -s $(pwd)/init.vim   ~/.config/nvim/init.vim
 ln -s $(pwd)/vim        ~/.vim
 ln -s $(pwd)/tmux.conf  ~/.tmux.conf
 
-# Symlink vi to vim
-ln -s /usr/local/bin/vim /usr/local/bin/vi
-
 # Enable text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
 defaults write com.apple.screencapture location ~/Downloads
