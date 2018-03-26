@@ -1,29 +1,27 @@
 #!/bin/sh
 brew bundle
 
-rm ~/.vimrc ~/.config/nvim/init.vim
 # Symlink dot files
-ln -s $(pwd)/gemrc      ~/.gemrc
-ln -s $(pwd)/gitconfig  ~/.gitconfig
-ln -s $(pwd)/gitignore  ~/.gitignore
-ln -s $(pwd)/profile    ~/.profile
-ln -s $(pwd)/rspec      ~/.rspec
-ln -s $(pwd)/vimrc      ~/.vimrc
-ln -s $(pwd)/init.vim   ~/.config/nvim/init.vim
-ln -s $(pwd)/vim        ~/.vim
-ln -s $(pwd)/tmux.conf  ~/.tmux.conf
+configs=(gemrc gitconfig gitignore profile rspec vimrc tmux.conf)
+
+for file in ${configs[*]}; do
+  # Delete file if it is a symlnik
+  if [ -h ~/.$file ]; then
+    rm ~/.$file
+  fi
+  # Symlink if there's no file
+  if [ ! -f ~/.$file ]; then
+    ln -s $(pwd)/$file ~/.$file
+  fi
+done
+
+if [ -f ~/.$file ]; then
+  rm ~/.config/nvim/init.vim
+fi
+mkdir -p ~/.config/nvim
+ln -s $(pwd)/init.vim ~/.config/nvim/init.vim
 
 # Enable text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
 defaults write com.apple.screencapture location ~/Downloads
 killall Finder
-
-# Compile the Command-T extension
-chruby system
-cd vim/bundle/Command-T/ruby/command-t
-ruby extconf.rb
-make clean
-make
-
-# TODO not sure how to get back to repo root
-
