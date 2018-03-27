@@ -23,3 +23,6 @@ cask 'iterm2'
 cask 'java'
 cask 'vagrant'
 cask 'virtualbox'
+
+tap 'cloudfoundry/tap'
+brew 'cloudfoundry/tap/cf-cli'
