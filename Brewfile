@@ -17,6 +17,7 @@ brew 'ruby-install'
 brew 'the_silver_searcher'
 brew 'tmux'
 brew 'yarn'
+brew 'awscli'
 
 cask 'TextMate'
 cask 'iterm2'
