@@ -18,6 +18,7 @@ brew 'the_silver_searcher'
 brew 'tmux'
 brew 'yarn'
 brew 'awscli'
+brew 'pv'
 
 cask 'TextMate'
 cask 'iterm2'
