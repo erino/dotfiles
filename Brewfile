@@ -21,6 +21,7 @@ brew 'awscli'
 brew 'pv'
 brew 'blackbox'
 brew 'gnupg'
+brew 'terraform'
 
 cask 'TextMate'
 cask 'iterm2'
