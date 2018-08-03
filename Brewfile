@@ -8,7 +8,6 @@ brew 'chruby'
 brew 'git'
 brew 'gnupg'
 brew 'grunt'
-brew 'heroku/brew/heroku'
 brew 'htop'
 brew 'hub'
 brew 'imagemagick'
@@ -37,3 +36,6 @@ cask 'webpquicklook'  # https://github.com/sindresorhus/quick-look-plugins#webp
 
 tap 'cloudfoundry/tap'
 brew 'cloudfoundry/tap/cf-cli'
+
+tap 'heroku/brew'
+brew 'heroku/brew/heroku'
