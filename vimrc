@@ -31,7 +31,7 @@ set nowrap                  " disable line wrapping
 
 let mapleader = ","         " set <LEADER> to ,
 
-let g:netrw_liststyle= 3    " Default to tree style listing
+let g:netrw_liststyle = 3   " Default to tree style listing
 let g:netrw_altv = 1        " New split window on the right
 
 let g:ruby_host_prog = 'chruby-exec ' . ruby_version . ' -- /Users/erinrajstaniland/.gem/ruby/' . ruby_version . '/bin/neovim-ruby-host'
