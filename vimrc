@@ -1,5 +1,7 @@
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+let ruby_version = '2.5.3'  " Set ruby version for config
+
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
@@ -14,8 +16,8 @@ Plug 'tpope/vim-vinegar'
 Plug 'vim-ruby/vim-ruby'
 Plug 'lepture/vim-jinja'
 Plug 'wincent/command-t', {
-  \   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
-  \ }
+   \   'do': 'cd ruby/command-t/ext/command-t && chruby-exec ' . ruby_version . ' -- ruby extconf.rb && make'
+   \ }
 call plug#end()
 
 set tabstop=2               " default size of a real tab stop
@@ -31,6 +33,8 @@ let mapleader = ","         " set <LEADER> to ,
 
 let g:netrw_liststyle= 3    " Default to tree style listing
 let g:netrw_altv = 1        " New split window on the right
+
+let g:ruby_host_prog = 'chruby-exec ' . ruby_version . ' -- /Users/erinrajstaniland/.gem/ruby/' . ruby_version . '/bin/neovim-ruby-host'
 
 set wildignore+=*/node_modules/* " Ignore node_modules
 
