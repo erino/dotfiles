@@ -36,7 +36,7 @@ let g:netrw_altv = 1        " New split window on the right
 
 let g:ruby_host_prog = 'chruby-exec ' . ruby_version . ' -- /Users/erinrajstaniland/.gem/ruby/' . ruby_version . '/bin/neovim-ruby-host'
 
-set wildignore+=*/node_modules/* " Ignore node_modules
+set wildignore+=*/node_modules/*,*/tmp/*,*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
