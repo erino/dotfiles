@@ -3,7 +3,7 @@
 function g() {
   PROJECT_PATH=/var/govuk
 
-  results=(`find -L $PROJECT_PATH -type d -maxdepth 2 -iname "*$1*"`)
+  results=(`find -L $PROJECT_PATH -maxdepth 2 -type d -iname "*$1*"`)
   count=${#results[@]}
 
   if [ $count -gt 1 ]; then
