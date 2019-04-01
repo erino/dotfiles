@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-function p() {
-  PROJECT_PATH=~/Projects
+function g() {
+  PROJECT_PATH=/var/govuk
 
   results=(`find -L $PROJECT_PATH -type d -maxdepth 2 -iname "*$1*"`)
   count=${#results[@]}
