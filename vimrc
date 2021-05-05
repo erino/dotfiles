@@ -15,6 +15,8 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-vinegar'
 Plug 'vim-ruby/vim-ruby'
 Plug 'lepture/vim-jinja'
+Plug 'jparise/vim-graphql'
+Plug 'neo4j-contrib/cypher-vim-syntax'
 Plug 'wincent/command-t', {
    \   'do': 'cd ruby/command-t/ext/command-t && chruby-exec ' . ruby_version . ' -- ruby extconf.rb && make'
    \ }

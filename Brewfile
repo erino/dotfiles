@@ -1,5 +1,6 @@
 cask_args appdir: '/Applications'
 
+brew 'pyenv'
 brew 'awscli'
 brew 'bash-completion'
 brew 'blackbox'
@@ -11,14 +12,15 @@ brew 'grunt'
 brew 'htop'
 brew 'hub'
 brew 'imagemagick'
-brew 'jsonpp'
 brew 'jq'
+brew 'jsonpp'
 brew 'mongodb'
 brew 'neovim'
 brew 'pass'
 brew 'postgres'
 brew 'pv'
 brew 'redis'
+brew 'libreadline-dev'
 brew 'ruby-install'
 brew 'terraform'
 brew 'the_silver_searcher'
@@ -34,7 +36,7 @@ cask 'qlmarkdown'     # https://github.com/sindresorhus/quick-look-plugins#qlmar
 cask 'qlstephen'      # https://github.com/sindresorhus/quick-look-plugins#qlstephen
 cask 'quicklook-json' # https://github.com/sindresorhus/quick-look-plugins#quicklookjson
 cask 'vagrant'
-cask 'virtualbox'
+#cask 'virtualbox'
 cask 'webpquicklook'  # https://github.com/sindresorhus/quick-look-plugins#webp
 
 tap 'cloudfoundry/tap'

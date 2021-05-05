@@ -1,5 +1,6 @@
 [user]
 	name = Erin Raj-Staniland
+	email = erin.raj-staniland@digital.cabinet-office.gov.uk
 [alias]
 	br = branch
 	ca = commit --amend
@@ -23,3 +24,10 @@
 	excludesfile = ~/.gitignore
 [rebase]
 	autosquash = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[pull]
+	ff = only
